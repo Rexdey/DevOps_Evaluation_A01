@@ -14,7 +14,7 @@ Se puede desplegar tanto **localmente con docker-compose** como en la **nube (AW
 
 ---
 
-## 🛠 Tecnologías
+##  Tecnologías
 
 - **Node.js (Express.js)** → Backend del microservicio.
 - **PostgreSQL** → Base de datos relacional.
@@ -27,7 +27,9 @@ Se puede desplegar tanto **localmente con docker-compose** como en la **nube (AW
 
 DevOps_Evaluation_A01/
 │── README.md
+
 │── docker-compose.yml
+
 │── Dockerfile
 │── package.json
 │── init.sql
@@ -43,7 +45,7 @@ DevOps_Evaluation_A01/
 
 ---
 
-## 🔧 Ejecución local con Docker
+##  Ejecución local con Docker
 
 ### 1. Clonar repositorio
 ```bash
