@@ -44,6 +44,7 @@ DevOps_Evaluation_A01/
 │ ├── routes.js
 
 │── terraform/
+
 │ ├── main.tf
 │ ├── variables.tf
 │ ├── outputs.tf
