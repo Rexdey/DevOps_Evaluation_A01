@@ -61,7 +61,7 @@ Contenedor users-service → API en http://localhost:3000
 
 Contenedor postgres → Base de datos en puerto 5432, inicializada con la tabla users gracias a init.sql
 
-###Script de inicialización de la base de datos
+### Script de inicialización de la base de datos
 
 El archivo init.sql
  se monta automáticamente en el contenedor de PostgreSQL al iniciarse.
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(150) UNIQUE NOT NULL
 );
 
-### Probar API
+## Probar API
 
 Ejemplos con curl:
 
@@ -93,7 +93,7 @@ curl -X PUT http://localhost:3000/users/1 \
 # Eliminar usuario
 curl -X DELETE http://localhost:3000/users/1
 
-### Despliegue en AWS con Terraform
+## Despliegue en AWS con Terraform
 1. Configurar credenciales de AWS
 
 aws configure
@@ -134,7 +134,7 @@ Verás la IP pública del microservicio, por ejemplo:
 service_url = http://54.210.123.45:3000
 
 
-### Pruebas en AWS
+## Pruebas en AWS
 
 Igual que en local, pero usando la IP pública:
 
@@ -144,7 +144,7 @@ curl -X POST http://54.210.123.45:3000/users \
 
 
 
-### Notas
+## Notas
 
 Este proyecto es una base simple para evaluación. En un entorno real se recomienda:
 
