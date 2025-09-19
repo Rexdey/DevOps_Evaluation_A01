@@ -40,13 +40,17 @@ DevOps_Evaluation_A01/
 │── src/
 
 │ ├── app.js
+
 │ ├── db.js
+
 │ ├── routes.js
 
 │── terraform/
 
 │ ├── main.tf
+
 │ ├── variables.tf
+
 │ ├── outputs.tf
 
 
