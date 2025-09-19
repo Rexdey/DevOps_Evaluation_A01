@@ -26,17 +26,23 @@ Se puede desplegar tanto **localmente con docker-compose** como en la **nube (AW
 ##  Estructura
 
 DevOps_Evaluation_A01/
+
 │── README.md
 
 │── docker-compose.yml
 
 │── Dockerfile
+
 │── package.json
+
 │── init.sql
+
 │── src/
+
 │ ├── app.js
 │ ├── db.js
 │ ├── routes.js
+
 │── terraform/
 │ ├── main.tf
 │ ├── variables.tf
