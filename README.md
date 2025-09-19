@@ -49,14 +49,11 @@ DevOps_Evaluation_A01/
 ```bash
 git clone https://github.com/tuusuario/DevOps_Evaluation_A01.git
 cd DevOps_Evaluation_A01
-```bash
 
----
 
-###2. Levantar servicios
+2. Levantar servicios
 
 docker-compose up --build
-
 
 Esto crea:
 
@@ -76,3 +73,83 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(150) UNIQUE NOT NULL
 );
 
+📡 Probar API
+
+Ejemplos con curl:
+
+# Crear usuario
+curl -X POST http://localhost:3000/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Alice","email":"alice@example.com"}'
+
+# Obtener usuario por ID
+curl http://localhost:3000/users/1
+
+# Actualizar usuario
+curl -X PUT http://localhost:3000/users/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Alice Updated","email":"alice@newmail.com"}'
+
+# Eliminar usuario
+curl -X DELETE http://localhost:3000/users/1
+
+☁️ Despliegue en AWS con Terraform
+1. Configurar credenciales de AWS
+
+aws configure
+
+
+2. Variables en terraform/variables.tf
+
+Edita las variables según tu cuenta AWS:
+
+variable "region" { default = "us-east-1" }
+variable "instance_type" { default = "t2.micro" }
+variable "db_name" { default = "usersdb" }
+variable "db_user" { default = "postgres" }
+variable "db_password" { default = "password123" }
+
+
+3. Desplegar infraestructura
+
+cd terraform
+terraform init
+terraform apply -auto-approve
+
+
+Terraform creará:
+
+Una instancia EC2 con Docker
+
+Una base de datos RDS PostgreSQL
+
+Despliegue automático del contenedor del microservicio
+
+4. Salidas
+
+terraform output
+
+Verás la IP pública del microservicio, por ejemplo:
+
+service_url = http://54.210.123.45:3000
+
+
+✅ Pruebas en AWS
+
+Igual que en local, pero usando la IP pública:
+
+curl -X POST http://54.210.123.45:3000/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Bob","email":"bob@example.com"}'
+
+
+
+📌 Notas
+
+Este proyecto es una base simple para evaluación. En un entorno real se recomienda:
+
+Usar ECS/Fargate en lugar de EC2 manual.
+
+Manejo de secretos en AWS Secrets Manager.
+
+Pipelines de CI/CD (GitHub Actions, GitLab CI, etc.).
