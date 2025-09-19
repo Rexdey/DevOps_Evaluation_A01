@@ -46,10 +46,10 @@ DevOps_Evaluation_A01/
 ## 🔧 Ejecución local con Docker
 
 ### 1. Clonar repositorio
-
+```bash
 git clone https://github.com/tuusuario/DevOps_Evaluation_A01.git
 cd DevOps_Evaluation_A01
-
+```bash
 
 2. Levantar servicios
 
