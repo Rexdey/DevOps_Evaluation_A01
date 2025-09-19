@@ -5,7 +5,7 @@ Se puede desplegar tanto **localmente con docker-compose** como en la **nube (AW
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - Crear un nuevo usuario con nombre y correo electrónico.
 - Obtener la información de un usuario existente por su `id`.
@@ -14,7 +14,7 @@ Se puede desplegar tanto **localmente con docker-compose** como en la **nube (AW
 
 ---
 
-## 🛠️ Tecnologías
+## 🛠 Tecnologías
 
 - **Node.js (Express.js)** → Backend del microservicio.
 - **PostgreSQL** → Base de datos relacional.
@@ -23,7 +23,7 @@ Se puede desplegar tanto **localmente con docker-compose** como en la **nube (AW
 
 ---
 
-## 📂 Estructura
+##  Estructura
 
 DevOps_Evaluation_A01/
 │── README.md
