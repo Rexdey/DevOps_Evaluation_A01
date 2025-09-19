@@ -49,7 +49,7 @@ DevOps_Evaluation_A01/
 ```bash
 git clone https://github.com/tuusuario/DevOps_Evaluation_A01.git
 cd DevOps_Evaluation_A01
-```bash
+```
 
 2. Levantar servicios
 
