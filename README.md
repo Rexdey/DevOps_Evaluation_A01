@@ -50,9 +50,13 @@ DevOps_Evaluation_A01/
 git clone https://github.com/tuusuario/DevOps_Evaluation_A01.git
 cd DevOps_Evaluation_A01
 
+
+---
+
 ###2. Levantar servicios
 
 docker-compose up --build
+
 
 Esto crea:
 
